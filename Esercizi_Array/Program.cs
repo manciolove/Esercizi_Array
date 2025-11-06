@@ -37,6 +37,8 @@ namespace Esercizi_Array
                     Console.Write("[" + numDisparo[i] + "]");
                 }
             }
+
+            //esercizio 6
             int[] vet1 = { 3, 8, 6, 2, 9, 7 };
             int x = 5, min = 0, max = 0;
             for (int i = 0; i < vet1.Length; i++)
@@ -66,8 +68,6 @@ namespace Esercizi_Array
                     iMax++;
                 }
             }
-
-            //esercizio 6
             for (int i = 0; i < vet2.Length; i++)
             {
                 Console.Write("[" + vet2[i] + "]");
