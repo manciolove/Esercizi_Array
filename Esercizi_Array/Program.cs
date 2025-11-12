@@ -40,10 +40,10 @@ namespace Esercizi_Array
 
             //esercizio 6
             int[] vet1 = { 3, 8, 6, 2, 9, 7 };
-            int x = 5, min = 0, max = 0;
+            int n = 5, min = 0, max = 0;
             for (int i = 0; i < vet1.Length; i++)
             {
-                if (vet1[i] < x)
+                if (vet1[i] < n)
                 {
                     min++;
                 }
@@ -57,7 +57,7 @@ namespace Esercizi_Array
             int iMin = 0, iMax = 0;
             for (int i = 0; i < vet1.Length; i++)
             {
-                if (vet1[i] < x)
+                if (vet1[i] < n)
                 {
                     vet2[iMin] = vet1[i];
                     iMin++;
@@ -79,9 +79,7 @@ namespace Esercizi_Array
                 Console.Write("[" + vet3[i] + "]");
             }
 
-            //esercizio 7
-            static void Main(string[] args)
-            {
+            //esercizio 7                        
                 int[] vet = { 1, 2, 5, 10, 7, 6, 13 };
 
                 int a, b, cont = 0;
@@ -108,9 +106,10 @@ namespace Esercizi_Array
 
                 Console.WriteLine();
 
+
                 // esercizio 8
 
-                int[] vet1 = { 1, 2, 5, 10, 7, 6, 13 };
+                int[] x = { 1, 2, 5, 10, 7, 6, 13 };
 
                 int cont1 = 0;
 
@@ -120,10 +119,10 @@ namespace Esercizi_Array
                 Console.WriteLine("Inserisci il secondo estremo");
                 b = Convert.ToInt32(Console.ReadLine());
 
-                for (int i = 0; i < vet1.Length; i++)
+                for (int i = 0; i < x.Length; i++)
                 {
 
-                    if (vet1[i] <= a || vet1[i] >= b)
+                    if (x[i] <= a || x[i] >= b)
                     {
 
                         cont1 = cont1 + 1;
@@ -138,7 +137,7 @@ namespace Esercizi_Array
 
                 //esercizio 9
 
-                int[] vet3 = { 3, 8, 5, 9, 12, 1 };
+                int[] y = { 3, 8, 5, 9, 12, 1 };
 
                 int c, d, cont2 = 0;
 
@@ -157,7 +156,7 @@ namespace Esercizi_Array
                 for (int i = 0; i < vet3.Length; i++)
                 {
 
-                    if (vet3[i] >= a && vet3[i] <= b || vet3[i] >= c && vet3[i] <= d)
+                    if (y[i] >= a && y[i] <= b || y[i] >= c && y[i] <= d)
                     {
                         cont2 = cont2 + 1;
                     }
@@ -200,8 +199,7 @@ namespace Esercizi_Array
                 }
 
                 Console.WriteLine("Numeri non compresi tra a-b oppure c-d: " + cont3);
-                
-            }
+                            
         }
     }
 }
